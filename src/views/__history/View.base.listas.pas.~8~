@@ -1,0 +1,67 @@
+unit View.base.listas;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, View.base, Vcl.ExtCtrls,
+  dxGDIPlusClasses, Vcl.WinXPanels, Vcl.Buttons, Vcl.StdCtrls, Vcl.WinXCtrls;
+
+type
+  TViewbaseListas = class(TViewbase)
+    PnlTopo: TPanel;
+    PnlRodape: TPanel;
+    Pnlcentro: TPanel;
+    CardPanelConteudo: TCardPanel;
+    PnlImgLogo: TPanel;
+    ImgLogoAzul: TImage;
+    ImgLogoCinza: TImage;
+    LblTitulo: TLabel;
+    PnlFechar: TPanel;
+    SpeedButton1: TSpeedButton;
+    Card_Pesquisa: TCard;
+    Card_Cadastro: TCard;
+    PnlPesquisa: TPanel;
+    PnlFiltroCadastro: TPanel;
+    PnlPesquisar: TPanel;
+    EdtPesquisa: TSearchBox;
+    PnlFiltro: TPanel;
+    lblPesquisa: TLabel;
+    btnNovo: TSpeedButton;
+    procedure ImgLogoAzulMouseEnter(Sender: TObject);
+    procedure ImgLogoCinzaMouseLeave(Sender: TObject);
+    procedure BntfecharClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  ViewbaseListas: TViewbaseListas;
+
+implementation
+
+{$R *.dfm}
+
+procedure TViewbaseListas.ImgLogoAzulMouseEnter(Sender: TObject);
+begin
+  inherited;
+  ImgLogoAzul.Visible := false;
+  ImgLogoCinza.Visible := true;
+end;
+
+procedure TViewbaseListas.ImgLogoCinzaMouseLeave(Sender: TObject);
+begin
+  inherited;
+  ImgLogoAzul.Visible := true;
+  ImgLogoCinza.Visible := false;
+end;
+
+procedure TViewbaseListas.BntfecharClick(Sender: TObject);
+begin
+  inherited;
+  self.Close;
+end;
+
+end.

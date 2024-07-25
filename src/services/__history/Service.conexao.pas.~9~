@@ -1,0 +1,104 @@
+unit Service.conexao;
+
+interface
+
+uses
+  System.SysUtils,
+  System.Classes,
+  System.IniFiles,
+  Service.base,
+  FireDAC.Stan.Intf,
+  FireDAC.Stan.Option,
+  FireDAC.Stan.Error,
+  FireDAC.UI.Intf,
+  FireDAC.Phys.Intf,
+  FireDAC.Stan.Def,
+  FireDAC.Stan.Pool,
+  FireDAC.Stan.Async,
+  FireDAC.Phys,
+  FireDAC.VCLUI.Wait,
+  Data.DB,
+  FireDAC.Comp.Client,
+  FireDAC.Phys.FBDef,
+  FireDAC.Comp.UI,
+  FireDAC.Phys.IBBase,
+  FireDAC.Phys.FB;
+  type
+  TServiceConexao = class(TServiceBase)
+    FDConnection: TFDConnection;
+    FBDRIVER: TFDPhysFBDriverLink;
+    FDGUIxWaitCursor: TFDGUIxWaitCursor;
+    procedure DataModuleCreate(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  ServiceConexao: TServiceConexao;
+
+implementation
+
+{%CLASSGROUP 'Vcl.Controls.TControl'}
+
+{$R *.dfm}
+
+
+
+procedure TServiceConexao.DataModuleCreate(Sender: TObject);
+
+Var
+  LIniFile   : TIniFile;
+  LDatabase  : String;
+  LUser_Name : String;
+  LPassword  : String;
+  LServidor  : String;
+  Lporta     : integer;
+  LCaminho   : string;
+
+begin
+  inherited;
+
+  try
+    FDConnection.Connected := False;
+
+    LCaminho   := ExtractFileDir(ParamStr(0)) + '\Config/ini';
+
+
+    LIniFile   := TIniFile.Create(Lcaminho);
+
+    LDatabase  := LIniFile.ReadString('Conexao','Database',LDatabase);
+    LServidor  := LIniFile.ReadString('Conexao','Servidor', LServidor);
+    Lporta     := LIniFile.ReadInteger('Conexao','Porta', Lporta);
+
+
+    LUser_Name := 'SYSDBA';
+    LPassword  := 'masterkey';
+
+    FDConnection.Params.Values['Database']  := LDatabase;
+    FDConnection.Params.Values['User_Name'] := Luser_Name;
+    FDConnection.Params.Values['Password']  := LPassword;
+    FDConnection.Params.Values['Server']    := LServidor;
+    FDConnection.Params.Values['Porta']     := LPorta.ToString;
+
+  //  FDConnection.Connected := True;
+
+  finally
+    FreeAndNil(LIniFile);
+  end;
+
+  //carrega minha filial
+
+  QRY_filial.Close;
+  QRY_filial.Params[0].AsInteger := 1;
+  QRY_filial.Open();
+
+
+  iCOD_FILIAL  := QRY_filialFil_CODIGO.AsInteger;
+  sRAZAO_FILIAL := QRY_filialFil_RAZAO.AsSting;
+
+
+end;
+
+end.

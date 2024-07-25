@@ -1,0 +1,8 @@
+inherited ServiceConexao: TServiceConexao
+  object FDConnection: TFDConnection
+    Params.Strings = (
+      'ConnectionDef=FDConnection')
+    Left = 272
+    Top = 280
+  end
+end

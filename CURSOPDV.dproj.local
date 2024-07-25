@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2024/05/13 21:35:19.000.312,=C:\Users\dayvi\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2024/05/13 21:38:46.000.944,C:\PDV\src\views\view.principal.dfm=C:\Users\dayvi\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit2.dfm</Transaction>
+    <Transaction>2024/05/13 21:38:46.000.944,C:\PDV\src\views\view.principal.pas=C:\Users\dayvi\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2024/05/13 21:39:14.000.749,C:\PDV\CURSOPDV.dproj=C:\Users\dayvi\OneDrive\Documentos\Embarcadero\Studio\Projects\Project3.dproj</Transaction>
+    <Transaction>2024/05/17 23:44:42.000.150,=C:\PDV\Unit1.pas</Transaction>
+    <Transaction>2024/05/17 23:45:48.000.533,C:\PDV\src\services\Service.base.dfm=C:\PDV\Unit1.dfm</Transaction>
+    <Transaction>2024/05/17 23:45:48.000.533,C:\PDV\src\services\Service.base.pas=C:\PDV\Unit1.pas</Transaction>
+    <Transaction>2024/05/18 21:19:30.000.038,=C:\PDV\Unit1.pas</Transaction>
+    <Transaction>2024/05/18 21:20:42.000.121,C:\PDV\Unit1.pas=C:\PDV\src\services\Service.conexao.pas</Transaction>
+    <Transaction>2024/05/18 21:20:42.000.121,C:\PDV\Unit1.dfm=C:\PDV\src\services\Service.conexao.dfm</Transaction>
+    <Transaction>2024/05/19 21:17:01.000.247,=C:\PDV\Unit1.pas</Transaction>
+    <Transaction>2024/05/19 21:17:52.000.052,C:\PDV\src\services\Service.cadastro.pas=C:\PDV\Unit1.pas</Transaction>
+    <Transaction>2024/05/19 21:17:52.000.052,C:\PDV\src\services\Service.cadastro.dfm=C:\PDV\Unit1.dfm</Transaction>
+    <Transaction>2024/05/21 22:24:47.000.578,=C:\PDV\Unit1.pas</Transaction>
+    <Transaction>2024/05/21 22:27:04.000.817,C:\PDV\Unit1.dfm=C:\PDV\src\views\View.base.dfm</Transaction>
+    <Transaction>2024/05/21 22:27:04.000.817,C:\PDV\Unit1.pas=C:\PDV\src\views\View.base.pas</Transaction>
+    <Transaction>2024/05/21 22:32:35.000.180,=C:\PDV\Unit1.pas</Transaction>
+    <Transaction>2024/05/21 22:33:46.000.932,C:\PDV\Unit1.dfm=C:\PDV\src\views\View.base.listas.dfm</Transaction>
+    <Transaction>2024/05/21 22:33:46.000.932,C:\PDV\Unit1.pas=C:\PDV\src\views\View.base.listas.pas</Transaction>
+    <Transaction>2024/07/23 17:43:48.000.226,=C:\PDV\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>
