@@ -1,32 +1,14 @@
 inherited ServiceCadastro: TServiceCadastro
-  Height = 324
-  Width = 546
-  inherited FDConnection: TFDConnection
-    Params.Strings = (
-      'Database=C:\GitProjects\PDV\PDVDADOS.FDB'
-      'User_Name=SYSDBA'
-      'Password=masterkey'
-      'Port=3050'
-      'Server=LocalHost'
-      'CharacterSet=WIN1252'
-      'DriverID=FB')
-    Left = 66
-    Top = 30
-  end
-  inherited FBDRIVER: TFDPhysFBDriverLink
-    Left = 66
-    Top = 82
-  end
-  inherited FDGUIxWaitCursor: TFDGUIxWaitCursor
-    Left = 66
-    Top = 137
-  end
+  Height = 405
+  Width = 683
+  PixelsPerInch = 120
   object QRY_Filial: TFDQuery
+    Active = True
     Connection = FDConnection
     SQL.Strings = (
       'select * from filial')
-    Left = 184
-    Top = 30
+    Left = 305
+    Top = 56
     object intgrfld_filialCD_FILIAL: TIntegerField
       AutoGenerateValue = arAutoInc
       FieldName = 'CD_FILIAL'
@@ -584,97 +566,6 @@ inherited ServiceCadastro: TServiceCadastro
     object QRY_FilialPERC_CUSTO_OPER: TCurrencyField
       FieldName = 'PERC_CUSTO_OPER'
       Origin = 'PERC_CUSTO_OPER'
-    end
-  end
-  object QRY_AbreCaixa: TFDQuery
-    Connection = FDConnection
-    SQL.Strings = (
-      'SELECT * FROM CXA_ABERTURA ')
-    Left = 184
-    Top = 83
-    object QRY_AbreCaixaCOD_ABERTURA: TIntegerField
-      FieldName = 'COD_ABERTURA'
-      Origin = 'COD_ABERTURA'
-      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
-      Required = True
-    end
-    object QRY_AbreCaixaCD_FILIAL: TIntegerField
-      FieldName = 'CD_FILIAL'
-      Origin = 'CD_FILIAL'
-    end
-    object QRY_AbreCaixaCD_CAIXA: TIntegerField
-      FieldName = 'CD_CAIXA'
-      Origin = 'CD_CAIXA'
-    end
-    object QRY_AbreCaixaCD_FUNCIONARIO: TIntegerField
-      FieldName = 'CD_FUNCIONARIO'
-      Origin = 'CD_FUNCIONARIO'
-    end
-    object QRY_AbreCaixaDT_ABERTURA: TDateField
-      FieldName = 'DT_ABERTURA'
-      Origin = 'DT_ABERTURA'
-    end
-    object QRY_AbreCaixaHORA_ABERTURA: TTimeField
-      FieldName = 'HORA_ABERTURA'
-      Origin = 'HORA_ABERTURA'
-    end
-    object QRY_AbreCaixaDT_FECHAMENTO: TDateField
-      FieldName = 'DT_FECHAMENTO'
-      Origin = 'DT_FECHAMENTO'
-    end
-    object QRY_AbreCaixaHORA_FECHAMENTO: TTimeField
-      FieldName = 'HORA_FECHAMENTO'
-      Origin = 'HORA_FECHAMENTO'
-    end
-    object QRY_AbreCaixaCD_CAIXA_ORIGEM: TIntegerField
-      FieldName = 'CD_CAIXA_ORIGEM'
-      Origin = 'CD_CAIXA_ORIGEM'
-    end
-    object QRY_AbreCaixaVL_INI_OUTROS: TCurrencyField
-      FieldName = 'VL_INI_OUTROS'
-      Origin = 'VL_INI_OUTROS'
-    end
-    object QRY_AbreCaixaVL_INI_CHEQUE: TCurrencyField
-      FieldName = 'VL_INI_CHEQUE'
-      Origin = 'VL_INI_CHEQUE'
-    end
-    object QRY_AbreCaixaVL_INI_CARTAO: TCurrencyField
-      FieldName = 'VL_INI_CARTAO'
-      Origin = 'VL_INI_CARTAO'
-    end
-    object QRY_AbreCaixaVL_INI_DINHEIRO: TCurrencyField
-      FieldName = 'VL_INI_DINHEIRO'
-      Origin = 'VL_INI_DINHEIRO'
-    end
-    object QRY_AbreCaixaVL_FIM_OUTROS: TCurrencyField
-      FieldName = 'VL_FIM_OUTROS'
-      Origin = 'VL_FIM_OUTROS'
-    end
-    object QRY_AbreCaixaVL_FIM_CHEQUE: TCurrencyField
-      FieldName = 'VL_FIM_CHEQUE'
-      Origin = 'VL_FIM_CHEQUE'
-    end
-    object QRY_AbreCaixaVL_FIM_CARTAO: TCurrencyField
-      FieldName = 'VL_FIM_CARTAO'
-      Origin = 'VL_FIM_CARTAO'
-    end
-    object QRY_AbreCaixaVL_FIM_DINHEIRO: TCurrencyField
-      FieldName = 'VL_FIM_DINHEIRO'
-      Origin = 'VL_FIM_DINHEIRO'
-    end
-    object QRY_AbreCaixaDT_ATZ: TDateField
-      FieldName = 'DT_ATZ'
-      Origin = 'DT_ATZ'
-    end
-    object QRY_AbreCaixaSTATUS: TStringField
-      FieldName = 'STATUS'
-      Origin = 'STATUS'
-      Size = 10
-    end
-    object QRY_AbreCaixaOBS: TStringField
-      FieldName = 'OBS'
-      Origin = 'OBS'
-      Size = 200
     end
   end
 end

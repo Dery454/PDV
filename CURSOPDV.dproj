@@ -153,6 +153,10 @@
             <Form>ViewbaseListas</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <DCCReference Include="src\views\View.AbrirCaixa.pas">
+            <Form>ViewAbrirCaixa</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
@@ -179,7 +183,7 @@
                 </Excluded_Packages>
             </Delphi.Personality>
             <Deployment Version="4">
-                <DeployFile LocalName="install\CURSOPDV.exe" Configuration="Debug" Class="ProjectOutput">
+                <DeployFile LocalName="C:\PDV\install\CURSOPDV.exe" Configuration="Debug" Class="ProjectOutput">
                     <Platform Name="Win32">
                         <RemoteName>CURSOPDV.exe</RemoteName>
                         <Overwrite>true</Overwrite>

@@ -21,7 +21,7 @@ uses
   Vcl.WinXCtrls,
   System.ImageList,
   Vcl.ImgList,
-  Service.Cadastro, Data.DB, Vcl.Grids, Vcl.DBGrids, Vcl.Imaging.pngimage;
+  Service.Cadastro, Data.DB, Vcl.Grids, Vcl.DBGrids;
 
 type
   TViewbaseListas = class(TViewbase)
@@ -54,17 +54,12 @@ type
     procedure ImgLogoAzulMouseEnter(Sender: TObject);
     procedure ImgLogoCinzaMouseLeave(Sender: TObject);
     procedure BtnfecharClick(Sender: TObject);
+    procedure Btnfechar(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure btnVoltarPesquisaClick(Sender: TObject);
     procedure btnNovoClick(Sender: TObject);
-    procedure FormCreate(Sender: TObject);
-    procedure FormDestroy(Sender: TObject);
   private
     { Private declarations }
-
-  published
-    Fservice: TServiceCadastro;
-
   public
     { Public declarations }
   end;
@@ -75,7 +70,7 @@ var
 implementation
 
 uses
-   Service.conexao;
+  Service.cadastro, Service.conexao;
 
 {$R *.dfm}
 
@@ -91,20 +86,8 @@ begin //Voltar Pesquiisa
   CardPanelConteudo.ActiveCard := Card_Pesquisa;
 end;
 
-procedure TViewbaseListas.FormCreate(Sender: TObject);
-begin //Create
-  inherited;
-  FService := TserviceCadastro.Create(Self);
-end;
-
-procedure TViewbaseListas.FormDestroy(Sender: TObject);
-begin //Destroy
-  inherited;
-  FreeAndNil(FService);
-end;
-
 procedure TViewbaseListas.FormShow(Sender: TObject);
-begin //Show
+begin //show
   inherited;
   CardPanelConteudo.ActiveCard := Card_Pesquisa;
 end;

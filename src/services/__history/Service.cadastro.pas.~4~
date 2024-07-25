@@ -152,27 +152,6 @@ type
     strngfld_filialFL_EXC_ICMS_PIS: TStringField;
     strngfld_filialFIL_CENTRO: TStringField;
     QRY_FilialPERC_CUSTO_OPER: TCurrencyField;
-    QRY_AbreCaixa: TFDQuery;
-    QRY_AbreCaixaCOD_ABERTURA: TIntegerField;
-    QRY_AbreCaixaCD_FILIAL: TIntegerField;
-    QRY_AbreCaixaCD_CAIXA: TIntegerField;
-    QRY_AbreCaixaCD_FUNCIONARIO: TIntegerField;
-    QRY_AbreCaixaDT_ABERTURA: TDateField;
-    QRY_AbreCaixaHORA_ABERTURA: TTimeField;
-    QRY_AbreCaixaDT_FECHAMENTO: TDateField;
-    QRY_AbreCaixaHORA_FECHAMENTO: TTimeField;
-    QRY_AbreCaixaCD_CAIXA_ORIGEM: TIntegerField;
-    QRY_AbreCaixaVL_INI_OUTROS: TCurrencyField;
-    QRY_AbreCaixaVL_INI_CHEQUE: TCurrencyField;
-    QRY_AbreCaixaVL_INI_CARTAO: TCurrencyField;
-    QRY_AbreCaixaVL_INI_DINHEIRO: TCurrencyField;
-    QRY_AbreCaixaVL_FIM_OUTROS: TCurrencyField;
-    QRY_AbreCaixaVL_FIM_CHEQUE: TCurrencyField;
-    QRY_AbreCaixaVL_FIM_CARTAO: TCurrencyField;
-    QRY_AbreCaixaVL_FIM_DINHEIRO: TCurrencyField;
-    QRY_AbreCaixaDT_ATZ: TDateField;
-    QRY_AbreCaixaSTATUS: TStringField;
-    QRY_AbreCaixaOBS: TStringField;
   private
     { Private declarations }
   public

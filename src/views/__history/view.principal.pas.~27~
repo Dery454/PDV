@@ -45,6 +45,7 @@ type
     imgProduto: TImage;
     pnlNomeProduto: TPanel;
     lblAbreCaixa: TLabel;
+    pnl1: TPanel;
     procedure imgLogoAmarelaClick(Sender: TObject);
     procedure imgLogoAmarelaMouseLeave(Sender: TObject);
     procedure lblAbreCaixaClick(Sender: TObject);

@@ -2,8 +2,8 @@
 <BorlandProject>
 	<Transactions>
     <Transaction>2024/05/13 21:35:19.000.312,=C:\Users\dayvi\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
-    <Transaction>2024/05/13 21:38:46.000.944,C:\PDV\src\views\view.principal.dfm=C:\Users\dayvi\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit2.dfm</Transaction>
     <Transaction>2024/05/13 21:38:46.000.944,C:\PDV\src\views\view.principal.pas=C:\Users\dayvi\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2024/05/13 21:38:46.000.944,C:\PDV\src\views\view.principal.dfm=C:\Users\dayvi\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit2.dfm</Transaction>
     <Transaction>2024/05/13 21:39:14.000.749,C:\PDV\CURSOPDV.dproj=C:\Users\dayvi\OneDrive\Documentos\Embarcadero\Studio\Projects\Project3.dproj</Transaction>
     <Transaction>2024/05/17 23:44:42.000.150,=C:\PDV\Unit1.pas</Transaction>
     <Transaction>2024/05/17 23:45:48.000.533,C:\PDV\src\services\Service.base.dfm=C:\PDV\Unit1.dfm</Transaction>
@@ -21,5 +21,26 @@
     <Transaction>2024/05/21 22:33:46.000.932,C:\PDV\Unit1.dfm=C:\PDV\src\views\View.base.listas.dfm</Transaction>
     <Transaction>2024/05/21 22:33:46.000.932,C:\PDV\Unit1.pas=C:\PDV\src\views\View.base.listas.pas</Transaction>
     <Transaction>2024/07/23 17:43:48.000.226,=C:\PDV\Unit1.pas</Transaction>
-  </Transactions>
+    <Transaction>2024/07/25 13:41:59.000.972,=C:\GitProjects\PDV\Unit1.pas</Transaction>
+    <Transaction>2024/07/25 13:43:57.000.435,C:\GitProjects\PDV\src\views\View.AbrirCaixa.pas=C:\GitProjects\PDV\Unit1.pas</Transaction>
+    <Transaction>2024/07/25 13:43:57.000.435,C:\GitProjects\PDV\src\views\View.AbrirCaixa.dfm=C:\GitProjects\PDV\Unit1.dfm</Transaction>
+  </Transactions>  <ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="src"/>
+    <File Path="src\services"/>
+    <File Path="src\services\Service.base.pas"/>
+    <File Path="src\services\Service.base.dfm"/>
+    <File Path="src\services\Service.cadastro.pas"/>
+    <File Path="src\services\Service.cadastro.dfm"/>
+    <File Path="src\services\Service.conexao.pas"/>
+    <File Path="src\services\Service.conexao.dfm"/>
+    <File Path="src\views"/>
+    <File Path="src\views\View.AbrirCaixa.pas"/>
+    <File Path="src\views\View.AbrirCaixa.dfm"/>
+    <File Path="src\views\View.base.listas.pas"/>
+    <File Path="src\views\View.base.listas.dfm"/>
+    <File Path="src\views\View.base.pas"/>
+    <File Path="src\views\View.base.dfm"/>
+    <File Path="src\views\view.principal.pas"/>
+    <File Path="src\views\view.principal.dfm"/>
+  </ProjectSortOrder>
 </BorlandProject>

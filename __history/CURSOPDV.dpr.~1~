@@ -7,8 +7,7 @@ uses
   Service.conexao in 'src\services\Service.conexao.pas' {ServiceConexao: TDataModule},
   Service.cadastro in 'src\services\Service.cadastro.pas' {ServiceCadastro: TDataModule},
   View.base in 'src\views\View.base.pas' {Viewbase},
-  View.base.listas in 'src\views\View.base.listas.pas' {ViewbaseListas},
-  View.AbrirCaixa in 'src\views\View.AbrirCaixa.pas' {ViewAbrirCaixa};
+  View.base.listas in 'src\views\View.base.listas.pas' {ViewbaseListas};
 
 {$R *.res}
 
@@ -17,6 +16,5 @@ begin
   Application.MainFormOnTaskbar := True;
   Application.CreateForm(TViewPrincipal, ViewPrincipal);
   Application.CreateForm(TServiceConexao, ServiceConexao);
-  Application.CreateForm(TViewAbrirCaixa, ViewAbrirCaixa);
   Application.Run;
 end.

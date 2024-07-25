@@ -2678,14 +2678,14 @@
           Margins.Bottom = 10
           Align = alTop
           Alignment = taCenter
-          Caption = 'PDV'
+          Caption = 'PDV CRIA'
           Font.Charset = ANSI_CHARSET
           Font.Color = clWhite
           Font.Height = -31
           Font.Name = 'Segoe UI Semibold'
           Font.Style = [fsBold]
           ParentFont = False
-          ExplicitWidth = 60
+          ExplicitWidth = 137
         end
         object lblsSologanEmpresa: TLabel
           AlignWithMargins = True
@@ -2841,9 +2841,9 @@
       TabOrder = 0
       object lblBoasVindas: TLabel
         AlignWithMargins = True
-        Left = 3
+        Left = 260
         Top = 5
-        Width = 1018
+        Width = 761
         Height = 62
         Margins.Top = 5
         Align = alClient
@@ -2857,32 +2857,60 @@
         Font.Style = [fsBold]
         ParentColor = False
         ParentFont = False
-        ExplicitLeft = 38
-        ExplicitTop = 21
+        ExplicitWidth = 322
+        ExplicitHeight = 55
       end
-      object lblAbreCaixa: TLabel
-        AlignWithMargins = True
-        Left = 23
-        Top = 20
-        Width = 119
-        Height = 25
-        Cursor = crHandPoint
+      object pnl1: TPanel
+        Left = 0
+        Top = 0
+        Width = 257
+        Height = 70
         ParentCustomHint = False
-        Alignment = taCenter
-        Caption = '[ABRE CAIXA]'
-        Color = clCream
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWhite
-        Font.Height = -19
-        Font.Name = 'Segoe UI Semibold'
-        Font.Style = [fsBold]
-        ParentColor = False
+        Align = alLeft
+        BiDiMode = bdLeftToRight
+        Color = clBlack
+        Ctl3D = True
+        DoubleBuffered = False
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -12
+        Font.Name = 'Segoe UI'
+        Font.Style = []
+        ParentBiDiMode = False
+        ParentBackground = False
+        ParentCtl3D = False
+        ParentDoubleBuffered = False
         ParentFont = False
         ParentShowHint = False
-        ShowAccelChar = False
         ShowHint = False
-        Transparent = True
-        OnClick = lblAbreCaixaClick
+        TabOrder = 0
+        object lblAbreCaixa: TLabel
+          AlignWithMargins = True
+          Left = 4
+          Top = 4
+          Width = 249
+          Height = 62
+          Cursor = crHandPoint
+          ParentCustomHint = False
+          Align = alClient
+          Alignment = taCenter
+          Caption = 'Abre Caixa'
+          Color = clCream
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWhite
+          Font.Height = -19
+          Font.Name = 'Segoe UI'
+          Font.Style = [fsBold]
+          ParentColor = False
+          ParentFont = False
+          ParentShowHint = False
+          ShowAccelChar = False
+          ShowHint = False
+          Transparent = True
+          OnClick = lblAbreCaixaClick
+          ExplicitLeft = 5
+          ExplicitTop = 1
+        end
       end
     end
   end

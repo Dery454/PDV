@@ -2678,14 +2678,14 @@
           Margins.Bottom = 10
           Align = alTop
           Alignment = taCenter
-          Caption = 'PDV'
+          Caption = 'PDV CRIA'
           Font.Charset = ANSI_CHARSET
           Font.Color = clWhite
           Font.Height = -31
           Font.Name = 'Segoe UI Semibold'
           Font.Style = [fsBold]
           ParentFont = False
-          ExplicitWidth = 60
+          ExplicitWidth = 137
         end
         object lblsSologanEmpresa: TLabel
           AlignWithMargins = True
@@ -2857,32 +2857,8 @@
         Font.Style = [fsBold]
         ParentColor = False
         ParentFont = False
-        ExplicitLeft = 38
-        ExplicitTop = 21
-      end
-      object lblAbreCaixa: TLabel
-        AlignWithMargins = True
-        Left = 23
-        Top = 20
-        Width = 119
-        Height = 25
-        Cursor = crHandPoint
-        ParentCustomHint = False
-        Alignment = taCenter
-        Caption = '[ABRE CAIXA]'
-        Color = clCream
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWhite
-        Font.Height = -19
-        Font.Name = 'Segoe UI Semibold'
-        Font.Style = [fsBold]
-        ParentColor = False
-        ParentFont = False
-        ParentShowHint = False
-        ShowAccelChar = False
-        ShowHint = False
-        Transparent = True
-        OnClick = lblAbreCaixaClick
+        ExplicitWidth = 322
+        ExplicitHeight = 55
       end
     end
   end
@@ -14543,9 +14519,8 @@
           BevelOuter = bvNone
           BorderStyle = bsNone
           Color = clMenuHighlight
-          EditLabel.Width = 93
+          EditLabel.Width = 3
           EditLabel.Height = 15
-          EditLabel.Caption = 'lbledtTotalAPagar'
           EditLabel.Color = clMenuHighlight
           EditLabel.ParentColor = False
           Font.Charset = GREEK_CHARSET

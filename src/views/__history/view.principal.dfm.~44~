@@ -2670,7 +2670,7 @@
           AlignWithMargins = True
           Left = 10
           Top = 10
-          Width = 163
+          Width = 140
           Height = 42
           Margins.Left = 10
           Margins.Top = 10
@@ -2678,21 +2678,21 @@
           Margins.Bottom = 10
           Align = alTop
           Alignment = taCenter
-          Caption = 'PDV'
+          Caption = 'PDV CRIA'
           Font.Charset = ANSI_CHARSET
           Font.Color = clWhite
           Font.Height = -31
           Font.Name = 'Segoe UI Semibold'
           Font.Style = [fsBold]
           ParentFont = False
-          ExplicitWidth = 60
+          ExplicitWidth = 137
         end
         object lblsSologanEmpresa: TLabel
           AlignWithMargins = True
           Left = 10
           Top = 62
-          Width = 163
-          Height = 28
+          Width = 140
+          Height = 25
           Margins.Left = 10
           Margins.Top = 0
           Margins.Right = 10
@@ -2782,6 +2782,8 @@
       Color = clBackground
       ParentBackground = False
       TabOrder = 2
+      ExplicitLeft = 495
+      ExplicitWidth = 526
       object lblCaixaDisponivel: TLabel
         AlignWithMargins = True
         Left = 3
@@ -2857,32 +2859,8 @@
         Font.Style = [fsBold]
         ParentColor = False
         ParentFont = False
-        ExplicitLeft = 38
-        ExplicitTop = 21
-      end
-      object lblAbreCaixa: TLabel
-        AlignWithMargins = True
-        Left = 23
-        Top = 20
-        Width = 119
-        Height = 25
-        Cursor = crHandPoint
-        ParentCustomHint = False
-        Alignment = taCenter
-        Caption = '[ABRE CAIXA]'
-        Color = clCream
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWhite
-        Font.Height = -19
-        Font.Name = 'Segoe UI Semibold'
-        Font.Style = [fsBold]
-        ParentColor = False
-        ParentFont = False
-        ParentShowHint = False
-        ShowAccelChar = False
-        ShowHint = False
-        Transparent = True
-        OnClick = lblAbreCaixaClick
+        ExplicitWidth = 322
+        ExplicitHeight = 55
       end
     end
   end
@@ -14556,6 +14534,8 @@
           ParentFont = False
           TabOrder = 0
           Text = '0'
+          ExplicitLeft = 104
+          ExplicitTop = -28
         end
       end
       object dbgrdProdutos: TDBGrid
